@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+body{
+    background-color: #3d3d3d;
+}
+.cover{
+    text-align: center;
+    color: white;
+    height: 80vh;
+}
+.banner{
+    width: 50%;
+}
+
+.bhead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .banner{
+        width: 80%; 
+    }
+    .bhead{
+        font-size: 30px;
+    }
+}
