@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Play');
+
+/*HEADER*/
+
+.head{
+    text-align: center;
+    background-image: url("../assets/hbanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: -5;
+}
+
+.headt{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    height: 100%;
+}
+
+.ban{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.logo{
+    height: 75px;
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.title{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    color: #ffffff;
+}
+
+
+
+/*NAVBAR*/
+
+.topnav {
+  visibility: hidden;
+}
+
+/*CAPTION*/
+
+.dummy{
+    margin-top: 30vh;
+    height: 70vh;
+    background-color: #f3f3f3;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: table;
+}
+
+.dumd{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    color: black;
+    font-size: 50px;
+}
+
+.dumd label{
+    color: #0296FF;
+    font-size: 100px;
+}
+
+.dumd h3{
+    font-size: 50px;
+}
+
+/*ABOUT*/
+
+.abt{
+    background-image: url("../assets/abanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+.abtc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.abtb{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+/*CONTACT*/
+
+.cont{
+    height: 80vh;
+    background-image: url("../assets/cbanner.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: table;
+}
+
+.ovl{
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cont input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 90vw; 
+    margin: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cont button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    width: 40vw;
+    transition: 0.5s;
+}
+
+.cont button:hover{
+    background-color: white;
+    color: #0296FF;
+    transition: 0.5s;
+}
+
+.tarea{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid white;
+    width: 90vw; 
+    margin: 10px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*FOOTER*/
+
+.foot{
+    height: 20vh;
+    display: table;
+    background-color: #2E5976;
+    width: 100%;
+}
+
+.ns{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.diso{
+    padding-left: 50px;
+    color: #f3f3f3;
+}
+
+.diso a{
+    text-decoration: none;
+    color: white;
+}
+
+.diso a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+.diso a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*SIDENAV*/
+
+.knav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.knav a {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.knav a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.knav a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+.cmenu {
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    /*border: none;*/
+    font-size: 36px;
+    color: white;
+    border: 2px solid white;
+    /*transition: 0.5s;*/
+    z-index: 900;
+    visibility: hidden;
+    /*margin-left: 50px;*/
+}
+
+.cmenu:hover{
+    background-color: #0296FF;
+    transition: 0.5s;
+}
+
+.omenu{
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #0296FF;
+    border: solid 2px #fff;
+    font-size: 20px;
+    /*transition: 0.5s;*/
+    color: white;
+    z-index: 800;
+
+}
+
+.omenu:hover{
+    background-color: white;
+    color: #0296FF;
+    transition: 0.5s;
+    border: solid 2px #111;
+}

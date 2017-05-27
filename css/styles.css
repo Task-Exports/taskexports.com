@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Play');
+
+/*HEADER*/
+
+.head{
+    text-align: center;
+    background-image: url("../assets/hbanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: -5;
+}
+
+.headt{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    height: 100%;
+}
+
+.ban{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.logo{
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.title{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    color: #ffffff;
+}
+
+.title h1{
+    line-height: 60px;
+
+}
+
+/*NAVBAR*/
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Play', sans-serif;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #0296FF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.topnav a.active {
+    background-color: #0296FF;
+    color: white;
+}
+
+.topnav a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+/*CAPTION*/
+
+.dummy{
+    margin-top: 30vh;
+    height: 70vh;
+    background-color: #f3f3f3;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: table;
+}
+
+.dumd{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 100px;
+    color: black;
+    font-size: 50px;
+}
+
+.dumd label{
+    color: #0296FF;
+    font-size: 100px;
+}
+
+.dumd h3{
+    font-size: 50px;
+}
+
+/*ABOUT*/
+
+.abt{
+    background-image: url("../assets/abanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+.abtc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.abtb{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+/*CONTACT*/
+
+.cont{
+    height: 80vh;
+    background-image: url("../assets/cbanner.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: table;
+}
+
+.ovl{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cont input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 300px; 
+    margin: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cont button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.cont button:hover{
+    background-color: white;
+    color: #0296FF;
+    transition: 0.5s;
+}
+
+.tarea{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid white;
+    width: 600px; 
+    margin: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*FOOTER*/
+
+.foot{
+    height: 20vh;
+    display: table;
+    background-color: #2E5976;
+    width: 100%;
+}
+
+.ns{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.diso{
+    padding-left: 50px;
+    color: #f3f3f3;
+}
+
+.diso a{
+    text-decoration: none;
+    color: white;
+}
+
+.diso a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+.diso a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+/*SIDENAV*/
+
+.knav {
+    visibility: hidden;
+}
+
+.cmenu {
+    visibility: hidden;
+}
+
+.omenu{
+    visibility: hidden;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK Exports</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" href="assets/texlogo.png" type="image/png" sizes="16x16 32x32"> 
+	<link rel="stylesheet" type="text/css" media="(min-width: 720px)" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 720px)" href="css/mobilestyles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <button id="open" class="omenu" onclick="openNav()">&#9776;</button>
+	<div id="kiloNav" class="knav">
+			<a id="h" class="active">Top</a>
+            <a id="a">About</a>
+            <a id="p" href="#prod">Products</a>
+            <a id="c">Contact</a>
+	</div>
+
+    <div id="tophack" style="visibility:hidden;">LOL</div>
+    <div class="head">
+        <div class="headt">
+            
+        </div>
+    </div>
+    <div class="ban" id="banner">
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <img class="logo" src="./assets/texlogo.png">
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12 title">
+            <h1>Task Exports</h1>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 topnav" id="navg">
+            <a id="ha" class="active">Top</a>
+            <a id="aa">About</a>
+            <a id="pa" href="#prod">Products</a>
+            <a id="ca">Contact</a>
+        </div>
+    </div>
+    <div class="dummy" id="dummy">
+        <div class="dumd">
+            <h3>Exports?</h3>
+            <p><label>Task</label>&nbsp;it !</p>
+        </div>
+    </div>
+    <div class="abt" id="about">
+        <div class="abtc">
+            <div class="abtb">
+                <h2>About Us</h2>
+                <p>We are an Upcoming Exports from India.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont" id="contact">
+        <div class="ovl">
+            <form class="cntfrm">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-Mail"><br>
+                <input type="text" placeholder="Subject"><br>
+                <textarea class="tarea" placeholder="Message"></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="ns">
+            <div class="diso">
+                &copy;2017 Task Exports
+            </div>
+            <div class="diso">
+                Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    
+var mq = window.matchMedia("(max-width: 720px)");
+
+$("#a").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 500);
+    if(mq.matches){
+        document.getElementById('open').style.visibility = "visible";
+        document.getElementById("kiloNav").style.width = "0";
+    }
+});
+$("#h").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#tophack").offset().top
+    }, 500);
+    if(mq.matches){
+        document.getElementById('open').style.visibility = "visible";
+        document.getElementById("kiloNav").style.width = "0";
+    }
+});
+$("#c").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 500);
+    if(mq.matches){
+        document.getElementById('open').style.visibility = "visible";
+        document.getElementById("kiloNav").style.width = "0";
+    }
+});
+
+
+	function openNav() {
+		if (mq.matches) {
+		    document.getElementById("kiloNav").style.width = "100%";
+		    document.getElementById('open').style.visibility = "hidden";
+    	}
+	}
+
+
+$('.topnav a').click(function(){
+    $('.topnav a').removeClass('active');
+    $(this).addClass('active');
+})
+$("#aa").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 500);
+});
+$("#ha").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#tophack").offset().top
+    }, 500);
+});
+$("#ca").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 500);
+});
+</script>
+
+</html>
