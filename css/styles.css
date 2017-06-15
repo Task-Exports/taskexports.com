@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Play');
 
+/*BOOTSTRAP GUTTER REMOVAL*/
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
 /*HEADER*/
 
 .head{
@@ -191,6 +204,7 @@
     width: 600px; 
     margin: 10px;
     font-size: 15px;
+    height: 100px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -241,4 +255,65 @@
 
 .omenu{
     visibility: hidden;
+}
+
+/*PRODUCTS*/
+
+.produc{
+    /*height: 300vh;*/
+    background-color: #3d3d3d;
+}
+
+.pdisp{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fright{
+    display: table;
+    /*vertical-align: middle;*/
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cen{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Play', sans-serif;
+}
+
+#ptit{
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+#inti{
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.cen:hover #inti{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.cen:hover #ptit{
+    font-size: 75px;
+    transition: 0.5s;
+}
+
+/*MODAL*/
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-body p{
+    padding-top: 20px;
+    font-size: 25px;
 }

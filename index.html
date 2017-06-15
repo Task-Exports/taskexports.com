@@ -4,7 +4,7 @@
 	<title>TASK Exports</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" href="assets/texlogo.png" type="image/png" sizes="16x16 32x32"> 
+    <link rel="icon" href="assets/texlogo.png" type="image/png" sizes="16x16 32x32"> 
 	<link rel="stylesheet" type="text/css" media="(min-width: 720px)" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" media="(max-width: 720px)" href="css/mobilestyles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 	<div id="kiloNav" class="knav">
 			<a id="h" class="active">Top</a>
             <a id="a">About</a>
-            <a id="p" href="#prod">Products</a>
+            <a id="p">Products</a>
             <a id="c">Contact</a>
 	</div>
 
@@ -37,7 +37,7 @@
         <div class="col-md-6 col-sm-12 col-xs-12 topnav" id="navg">
             <a id="ha" class="active">Top</a>
             <a id="aa">About</a>
-            <a id="pa" href="#prod">Products</a>
+            <a id="pa">Products</a>
             <a id="ca">Contact</a>
         </div>
     </div>
@@ -55,6 +55,38 @@
             </div>
         </div>
     </div>
+    <div class="produc row no-gutter" id="prod">
+        <div class="pdisp col-md-6 col-sm-6 col-xs-6">
+            <div class="fright" style="background-image: url('assets/prod1.jpg');">
+                <div class="cen" data-toggle="modal" data-target="#prod1">
+                    <label id="ptit">Coconuts</label><br>
+                    <label id="inti">Click to know More</label>
+                </div>
+            </div>
+            <div class="fright" style="background-image: url('assets/prod4.jpg');">
+                <div class="cen" data-toggle="modal" data-target="#prod4">
+                    <label id="ptit">Spices</label><br>
+                    <label id="inti">Click to know More</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="pdisp col-md-6 col-sm-6 col-xs-6">
+            <div class="fright" style="background-image: url('assets/prod2.jpg');">
+                <div class="cen">
+                    <label id="ptit">Chillies</label><br>
+                    <label id="inti">Click to know More</label>
+                </div>
+            </div>
+            <div class="fright" style="background-image: url('assets/prod3.jpg');">
+                <div class="cen">
+                    <label id="ptit">Jute</label><br>
+                    <label id="inti">Click to know More</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="cont" id="contact">
         <div class="ovl">
             <form class="cntfrm">
@@ -67,15 +99,45 @@
         </div>
     </div>
     <div class="foot">
-        <div class="ns">
-            <div class="diso">
-                &copy;2017 Task Exports
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="ns">
+                <div class="diso">
+                    &copy;2017 Task Exports
+                </div>
+                <div class="diso">
+                    Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
+                </div>
             </div>
-            <div class="diso">
-                Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="topnav" id="navg">
+                <a class="active">Top</a>
             </div>
         </div>
     </div>
+
+
+<!--MODALS-->
+
+    <div class="modal fade" id="prod1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Coconuts</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/prod1.jpg" alt="Coconuts" width="40%">
+                    <p>We export some of the finest quality Coconuts in India.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 <script>
@@ -109,6 +171,15 @@ $("#c").click(function() {
         document.getElementById("kiloNav").style.width = "0";
     }
 });
+$("#p").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#prod").offset().top
+    }, 500);
+    if(mq.matches){
+        document.getElementById('open').style.visibility = "visible";
+        document.getElementById("kiloNav").style.width = "0";
+    }
+});
 
 
 	function openNav() {
@@ -136,6 +207,11 @@ $("#ha").click(function() {
 $("#ca").click(function() {
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
+    }, 500);
+});
+$("#pa").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#prod").offset().top
     }, 500);
 });
 </script>
