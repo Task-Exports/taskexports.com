@@ -180,6 +180,10 @@
     padding-right: 10px;
 }
 
+.cont input:focus{
+    outline: none;
+}
+
 .cont button{
     background-color: transparent;
     border: 2px solid white;
@@ -209,13 +213,21 @@
     padding-right: 10px;
 }
 
+.tarea:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /*FOOTER*/
 
 .foot{
     height: 20vh;
-    display: table;
     background-color: #2E5976;
     width: 100%;
+    display: table;
 }
 
 .ns{
@@ -226,6 +238,7 @@
 .diso{
     padding-left: 50px;
     color: #f3f3f3;
+    display: inline-block;
 }
 
 .diso a{
@@ -242,6 +255,7 @@
     text-decoration: none;
     color: white;
 }
+
 
 /*SIDENAV*/
 
@@ -317,3 +331,4 @@
     padding-top: 20px;
     font-size: 25px;
 }
+

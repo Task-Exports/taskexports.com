@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -90,28 +91,30 @@
     <div class="cont" id="contact">
         <div class="ovl">
             <form class="cntfrm">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="E-Mail"><br>
-                <input type="text" placeholder="Subject"><br>
-                <textarea class="tarea" placeholder="Message"></textarea><br><br>
+                <input type="text" placeholder="Name" name="name" required autocomplete="on">
+                <input type="email" placeholder="E-Mail" name="email" required autocomplete="on"><br>
+                <input type="text" placeholder="Subject" name="subject" required><br>
+                <textarea class="tarea" placeholder="Message" name="message" required></textarea><br><br>
                 <button type="submit">Send</button>
             </form>
         </div>
     </div>
     <div class="foot">
-        <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="ns">
-                <div class="diso">
-                    &copy;2017 Task Exports
-                </div>
-                <div class="diso">
-                    Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
-                </div>
+        <div class="ns">
+            <div class="diso">
+                <strong>TASK Exports</strong><br>
+                H-4, 2nd Floor,<br>
+                TNHB, Arakkonam,<br>
+                Tamil Nadu, India<br>
+                631003
             </div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="topnav" id="navg">
-                <a class="active">Top</a>
+            <div class="diso">
+                <strong><a href="mailto:info@taskexports.com">info@taskexports.com</a><br>
+                <a href="tel:+919894807274">+91 98 94 807274</a></strong>
+            </div>
+            <div class="diso">
+                &copy;2017 Task Exports<br>
+                Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
             </div>
         </div>
     </div>
