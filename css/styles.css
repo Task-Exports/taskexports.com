@@ -20,7 +20,7 @@
     background-image: url("../assets/hbanner.jpg");
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 20vh;
     position: fixed;
     display: block;
     top: 0;
@@ -30,6 +30,7 @@
 
 .headt{
     background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: #080808;*/
     background-size: cover;
     height: 100%;
 }
@@ -99,12 +100,13 @@
 /*CAPTION*/
 
 .dummy{
-    margin-top: 30vh;
-    height: 70vh;
+    margin-top: 10vh;
+    height: 80vh;
     background-color: #f3f3f3;
+/*    background-image: url("../assets/hbanner.jpg");
     background-size: cover;
     background-position: center center;
-    width: 100%;
+*/    width: 100%;
     display: table;
 }
 
@@ -112,8 +114,10 @@
     display: table-cell;
     vertical-align: middle;
     padding-left: 100px;
-    color: black;
+    color: #333;
+    font-family: 'Play', sans-serif;
     font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .dumd label{
@@ -332,3 +336,11 @@
     font-size: 25px;
 }
 
+.modal-body ul{
+    text-align: center;
+    list-style: none;
+}
+
+.modal-body table{
+    text-align: left;
+}
