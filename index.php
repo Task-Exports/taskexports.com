@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,7 +101,8 @@
                 <input type="text" placeholder="Name" name="name" required autocomplete="on">
                 <input type="email" placeholder="E-Mail" name="email" required autocomplete="on"><br>
                 <input type="text" placeholder="Subject" name="subject" required><br>
-                <textarea class="tarea" placeholder="Message" name="message" required></textarea><br><br>
+                <textarea class="tarea" placeholder="Message" name="message" required></textarea><br>
+                <?php echo $error; ?><br>
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -119,7 +121,7 @@
                 <a href="tel:+919894807274">+91 98 94 807274</a></strong>
             </div>
             <div class="diso">
-                &copy;<?php echo date(Y); ?> Task Exports<br>
+                &copy;<?php echo date('Y'); ?> Task Exports<br>
                 Site Designed by: <strong><a href="https://therohith.com" target="_">Rohith</a></strong>
             </div>
         </div>
@@ -238,8 +240,10 @@
 
 </body>
 
+
 <script>
-    
+
+
 var mq = window.matchMedia("(max-width: 720px)");
 
 $("#a").click(function() {

@@ -344,3 +344,8 @@
 .modal-body table{
     text-align: left;
 }
+
+.cont h1{
+    color: white;
+    font-family: 'Play', sans-serif;
+}
